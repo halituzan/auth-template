@@ -1,6 +1,7 @@
+# Login Screen
 ![image](https://github.com/halituzan/auth-template/assets/8484782/af2dec15-1854-40b8-8f5d-34e6c456343e)
-
-![image](https://github.com/halituzan/auth-template/assets/8484782/88b84c2b-280a-498c-ab31-0f97a6fd5e1e)
+# Register Screen
+![image](https://github.com/halituzan/auth-template/assets/8484782/04702e68-646b-42e3-976b-bdb62ad489e2)
 
 ## Used Technologies
 - React
