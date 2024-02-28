@@ -43,25 +43,7 @@ const Register = () => {
               className='mt-2 '
               type='password'
             />
-            <PrimaryButton text={"Sign In"} className='mt-4' />
-            <div className='mt-4 flex justify-between w-full items-center'>
-              <div className='flex items-center'>
-                <input
-                  type='checkbox'
-                  id='remember-me'
-                  className='accent-rose-600 w-[1rem] h-[1rem]'
-                />
-                <label
-                  htmlFor='remember-me'
-                  className='ml-2 font-bold text-rose-600 text-[0.8rem]'
-                >
-                  Remember Me
-                </label>
-              </div>
-              <a href='/' className='text-[0.8rem] font-bold text-slate-600'>
-                Forgot Passoword?
-              </a>
-            </div>
+            <PrimaryButton text={"Sign Up"} className='mt-4' />
           </div>
         </div>
       </AuthLayout>
