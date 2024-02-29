@@ -1,7 +1,7 @@
 import React from "react";
 import AuthLayout from "../Components/AuthLayout/AuthLayout";
-import TextInput from "../Components/Inputs/TextInput";
-import PrimaryButton from "../Components/Buttons/PrimaryButton";
+import TextInput from "../Components/Patterns/Inputs/TextInput";
+import PrimaryButton from "../Components/Patterns/Buttons/PrimaryButton";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -52,7 +52,7 @@ const Login = () => {
             </a>
           </div>
         </div>
-        <div className='flex-1 p-10 w-1/2 text-white leading-8 flex flex-col justify-center items-center bg-gradient-to-r from-rose-500 via-rose-500 to-rose-600'>
+        <div className='flex-1 hidden md:flex p-10 w-1/2 text-white leading-8  flex-col justify-center items-center bg-gradient-to-r from-rose-500 via-rose-500 to-rose-600'>
           <p className='text-2xl font-bold'>Welcome to Login</p>
           <p className='text-sm leading-10 font-thin'>Don't have account ?</p>
           <button

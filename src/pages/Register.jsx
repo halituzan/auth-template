@@ -1,7 +1,7 @@
 import React from "react";
 import AuthLayout from "../Components/AuthLayout/AuthLayout";
-import PrimaryButton from "../Components/Buttons/PrimaryButton";
-import TextInput from "../Components/Inputs/TextInput";
+import PrimaryButton from "../Components/Patterns/Buttons/PrimaryButton";
+import TextInput from "../Components/Patterns/Inputs/TextInput";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -10,7 +10,7 @@ const Register = () => {
     <AuthLayout>
       <AuthLayout>
         <div className='card shadow-lg w-4/5 md:w-[768px] h-[500px]  flex justify-center bg-white'>
-          <div className='flex-1 p-10 w-1/2  text-white leading-8 flex flex-col justify-center items-center bg-gradient-to-r from-rose-500 via-rose-500 to-rose-600'>
+          <div className='flex-1 p-10 w-1/2  text-white leading-8 hidden md:flex flex-col justify-center items-center bg-gradient-to-r from-rose-500 via-rose-500 to-rose-600'>
             <p className='text-2xl font-bold'>Are You Ready to Register</p>
             <p className='text-sm leading-10 font-thin'>
               Do you have an existing account?
