@@ -1,12 +1,18 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const VerticalMenuItems = ({ open, item }) => {
+const VerticalMenuItems = ({ open, item, allTimeOpen }) => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   return (
     <button
-      className='my-1 p-2 rounded-md  w-full flex justify-start items-center hover:bg-slate-100/50 text-rose-600 hover:text-rose-600'
+      className={`my-1 p-2 rounded-md w-full flex justify-start items-center hover:font-bold hover:bg-rose-600 hover:text-white ${
+        pathname === item.path
+          ? "bg-rose-600 text-white font-bold"
+          : "bg-transparent text-rose-600"
+      }`}
       onClick={() => {
         navigate(item.path);
       }}
@@ -14,7 +20,7 @@ const VerticalMenuItems = ({ open, item }) => {
       <span className='mr-2'>
         <Icon icon={item.icon} fontSize={24} />
       </span>{" "}
-      {open && item.label}
+      {(allTimeOpen || open) && item.label}
     </button>
   );
 };
